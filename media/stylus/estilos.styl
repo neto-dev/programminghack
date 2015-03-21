@@ -1,0 +1,153 @@
+red_light = #e74c3c
+
+
+body
+	font-size 16px
+	margin 0px
+	padding 0px
+	
+
+#site-holder
+	position absolute
+	left 0px
+	right 0px
+	top 0px
+	bottom 0px
+	overflow hidden
+	transform-origin 0 0
+	-ms-transform-origin 0 0
+	-webkit-transform-origin 0 0
+	-o-transform-origin 0 0
+	& #flip
+		z-index 5
+	& .container
+		position absolute
+		left 0px
+		top 0px
+		bottom 0px
+		width 100%
+		z-index 3
+		& .slides-pages
+			background red_light
+			position absolute
+			left 0
+			top 0px
+			bottom 0px
+			width 100%
+			z-index 5
+			-webkit-transform-style preserve-3d
+			-moz-transform-style preserve-3d
+			-webkit-transform-origin left center
+			-moz-transform-origin left center
+			-webkit-touch-callout none
+			-webkit-user-select none
+			-khtml-user-select none
+			-moz-user-select none
+			-ms-user-select none
+			user-select none
+			& #load
+				background red_light
+				height 100%
+				position absolute 
+				top 0
+				left 0
+				width 100%
+				z-index 6
+				& #content-loader
+					position absolute
+					top 50%
+					left 50%
+					margin-top -120px
+					margin-left -70px
+					width 300px
+					& .indicator-percent
+						border 4px solid whitesmoke
+						border-radius 50%
+						color whitesmoke
+						text-align center
+						line-height 180px
+						height 180px
+						font-size 3.3em
+						width 180px
+					& #full
+						margin-top .8em
+					& .imgrows
+						margin-top .5em
+						overflow hidden
+					& .functions
+						& #f11
+							color whitesmoke
+							display inline-block
+							border-radius .3em
+							border 1px solid whitesmoke
+							background rgba(255,255,255,0.1)
+							text-align center
+							line-height 40px
+							height 40px
+							width 40px
+						& .des-arrow
+							float left
+							width 40px
+						& .swipe
+							color whitesmoke
+							padding-top 10px
+							padding-left 10px
+							float left
+						& p
+							color whitesmoke
+							padding-left 5px
+							display inline-block
+			& .site-header
+				& .site-menu
+					position absolute
+					left 2.5%
+					top 4%
+					right 2.5%
+					margin-left 30px
+					float left
+					text-transform uppercase
+					& .show
+						color whitesmoke
+						margin-right 18px
+						font-size .9em
+						text-decoration none
+					& .active
+						color whitesmoke
+						text-decoration underline
+				& .social
+					bottom 1%
+					position absolute
+					right 1.5%
+					& a
+						float left
+						margin-right 10px
+						border 3px solid white
+						width 20px
+						height 20px
+						font-size 12px
+						border-radius 50%
+						padding .4em
+						text-align center
+						text-decoration none
+						-webkit-transition all 300ms linear
+						-o-transition all 300ms linear
+						-moz-transition all 300ms linear
+						transition all 300ms linear
+						&:hover
+							border 3px solid rgba(255, 255, 255, 0.3)
+						& img
+							line-height 20px
+							width 20px
+		& .slides-pages:nth-child(2)
+			background #3498db
+			left 100%
+		& .slides-pages:nth-child(3)
+			background #1abc9c
+			left 200%
+		& .slides-pages:nth-child(4)
+			background #34495e
+			left 300%
+		& .slides-pages:nth-child(5)
+			background #2ecc71
+			left 400%
+		
